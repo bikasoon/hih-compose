@@ -4,7 +4,5 @@ services:
   app:
     image: sajjad30sakhti/hih:v0.2.1
     restart: unless-stopped
-    environment:
-      - DEBUG=1
     ports:
-      - 80:8080
+      - "${PORT:-80}:8080"
