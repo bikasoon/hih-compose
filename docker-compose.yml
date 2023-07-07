@@ -2,7 +2,9 @@ version: "3.7"
 
 services:
   app:
-    image: sajjad30sakhti/hih:v0.2.0
+    image: sajjad30sakhti/hih:v0.2.1
     restart: unless-stopped
+    environment:
+      - DEBUG=1
     ports:
       - 80:8080
