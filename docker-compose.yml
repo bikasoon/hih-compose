@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   app:
-    image: sajjad30sakhti/hih:v0.2.2
+    image: sajjad30sakhti/hih:latest
     restart: unless-stopped
     env_file: ./.env
     ports:
